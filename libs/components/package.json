@@ -1,0 +1,44 @@
+{
+  "name": "@inula-ui/components",
+  "version": "0.5.0",
+  "description": "Inula components.",
+  "keywords": [
+    "ui",
+    "inula-ui",
+    "component",
+    "components",
+    "inula",
+    "inula-component"
+  ],
+  "homepage": "https://github.com/inula-ui/inula-ui",
+  "bugs": {
+    "url": "https://github.com/inula-ui/inula-ui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inula-ui/inula-ui.git"
+  },
+  "license": "MIT",
+  "author": "Xie Jay <xiejay97@gmail.com>",
+  "sideEffects": false,
+  "type": "module",
+  "main": "./index.js",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "dependencies": {
+    "@inula-ui/hooks": "0.5.0",
+    "@inula-ui/utils": "0.5.0",
+    "@material-design-icons/svg": "^0.14.12",
+    "jss": "^10.10.0",
+    "jss-preset-default": "^10.10.0",
+    "lodash": "^4.17.21"
+  },
+  "peerDependencies": {
+    "dayjs": "^1.11.0",
+    "immer": ">=2.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../dist/libs/components"
+  }
+}

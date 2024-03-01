@@ -1,0 +1,28 @@
+{
+  "name": "@inula-ui/themes",
+  "version": "0.5.0",
+  "description": "The Sass-based styling solution of Inula UI.",
+  "keywords": [
+    "ui",
+    "inula-ui",
+    "css",
+    "sass"
+  ],
+  "homepage": "https://github.com/inula-ui/inula-ui",
+  "bugs": {
+    "url": "https://github.com/inula-ui/inula-ui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inula-ui/inula-ui.git"
+  },
+  "license": "MIT",
+  "author": "Xie Jay <xiejay97@gmail.com>",
+  "dependencies": {
+    "rfs": "^10.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../dist/libs/themes"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@inula-ui/plugins",
+  "version": "0.0.1",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "@nx/devkit": "16.8.1"
+  },
+  "executors": "./executors.json"
+}

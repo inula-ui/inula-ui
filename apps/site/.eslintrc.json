@@ -1,0 +1,26 @@
+{
+  "extends": ["plugin:@nx/react", "../../.eslintrc.json"],
+  "ignorePatterns": ["!**/*", "src/dist/**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "react-hooks/exhaustive-deps": [
+          "warn",
+          {
+            "additionalHooks": "(useIsomorphicLayoutEffect)"
+          }
+        ],
+        "react-refresh/only-export-components": "warn"
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {}
+    }
+  ]
+}

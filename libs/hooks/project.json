@@ -1,0 +1,43 @@
+{
+  "name": "hooks",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/hooks/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/hooks",
+        "rootDir": "libs/hooks/src",
+        "main": "libs/hooks/src/index.ts",
+        "tsConfig": "libs/hooks/tsconfig.lib.json",
+        "assets": [
+          "libs/hooks/CHANGELOG.md",
+          "libs/hooks/README.md",
+          {
+            "glob": "LICENSE",
+            "input": "",
+            "output": "/"
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/hooks/**/*.ts", "libs/hooks/package.json"]
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{workspaceRoot}/coverage/libs/hooks"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../coverage/libs/hooks"
+      }
+    }
+  },
+  "tags": []
+}

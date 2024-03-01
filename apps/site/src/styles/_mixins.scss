@@ -1,0 +1,9 @@
+@forward 'rfs/scss';
+
+@forward '@inula-ui/themes/mixins/bem/bem' with (
+  $block-prefix: 'app'
+);
+@forward '@inula-ui/themes/mixins/utils';
+@forward '@inula-ui/themes/mixins/polyfill';
+
+@forward 'mixins/breakpoints/breakpoints';

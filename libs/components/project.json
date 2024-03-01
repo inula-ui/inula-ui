@@ -1,0 +1,47 @@
+{
+  "name": "components",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/components/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/components",
+        "rootDir": "libs/components/src",
+        "main": "libs/components/src/index.ts",
+        "tsConfig": "libs/components/tsconfig.lib.json",
+        "assets": [
+          "libs/components/CHANGELOG.md",
+          {
+            "glob": "README.md",
+            "input": "",
+            "output": "/"
+          },
+          {
+            "glob": "LICENSE",
+            "input": "",
+            "output": "/"
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/components/**/*.{ts,tsx,md}", "libs/components/package.json"]
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{workspaceRoot}/coverage/libs/components"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../coverage/libs/components"
+      }
+    }
+  },
+  "tags": []
+}
