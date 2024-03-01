@@ -1,6 +1,6 @@
 {
   "name": "@inula-ui/hooks",
-  "version": "0.5.0",
+  "version": "0.0.1",
   "description": "Shared hooks used by Inula UI packages.",
   "keywords": [
     "ui",
