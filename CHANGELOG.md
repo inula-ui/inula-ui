@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.2](https://github.com/inula-ui/inula-ui/compare/v0.0.1...v0.0.2) (2024-03-01)
+
+### Bug Fixes
+
+- patch @nx/js@17.0.2 ([eaa9e3e](https://github.com/inula-ui/inula-ui/commit/eaa9e3ef8b2f36b268cb88757f5e083aeac82744))
+
 ## 0.0.1 (2024-03-01)
 
 ### Bug Fixes

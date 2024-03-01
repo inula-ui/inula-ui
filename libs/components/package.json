@@ -1,6 +1,6 @@
 {
   "name": "@inula-ui/components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Inula components.",
   "keywords": [
     "ui",
@@ -26,8 +26,8 @@
   "module": "./index.js",
   "types": "./index.d.ts",
   "dependencies": {
-    "@inula-ui/hooks": "0.0.1",
-    "@inula-ui/utils": "0.0.1",
+    "@inula-ui/hooks": "0.0.2",
+    "@inula-ui/utils": "0.0.2",
     "@material-design-icons/svg": "^0.14.12",
     "jss": "^10.10.0",
     "jss-preset-default": "^10.10.0",
