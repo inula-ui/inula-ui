@@ -63,6 +63,7 @@ const Store = createStore({
     },
   },
 });
+export const DialogStore = Store as any;
 
 export interface DialogInstance<P extends object> {
   key: string | number;

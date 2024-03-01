@@ -2,8 +2,9 @@ import type { RootProps } from './types';
 
 import { useEvent, useRefExtra } from '@inula-ui/hooks';
 import { isString, set } from 'lodash';
-import { createElement, useEffect, useMemo, useRef, useStore } from 'openinula';
+import { createElement, useEffect, useMemo, useRef } from 'openinula';
 
+import { DialogStore } from './dialog-service';
 import { ROOT_DATA, RootContext } from './vars';
 import dayjs from '../dayjs';
 import { Portal } from '../internal/portal';
@@ -43,9 +44,9 @@ function WindowSize() {
 export function Root(props: RootProps): JSX.Element | null {
   const { context: contextProp, children } = props;
 
-  const windowRef = useRefExtra(() => window);
+  const dialogStore = DialogStore();
 
-  const dialogs = useStore('inula-ui-dialogs');
+  const windowRef = useRefExtra(() => window);
 
   useEvent<MouseEvent>(
     windowRef,
@@ -110,7 +111,7 @@ export function Root(props: RootProps): JSX.Element | null {
     <>
       <RootContext.Provider value={context}>
         {children}
-        {(dialogs['data'] as { type: any; key: string | number; props: any }[]).map(({ type, key, props }) =>
+        {(dialogStore.data as { type: any; key: string | number; props: any }[]).map(({ type, key, props }) =>
           createElement(type, { key, ...props }),
         )}
       </RootContext.Provider>
