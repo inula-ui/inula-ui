@@ -59,43 +59,41 @@ export function App() {
       <ConfigProvider context={lContext}>
         <Root context={rootContext}>
           <Switch>
-            <Route
-              exact
-              path="/"
-              component={() => (
-                <Layout>
-                  <HomeRoute />
-                </Layout>
-              )}
-            />
-            {routes
-              .filter(({ path }) => !path.startsWith('/iframe'))
-              .map(({ path, component }) => (
-                <Route
-                  key={path}
-                  path={path}
-                  component={() => (
-                    <Layout>
-                      <Suspense fallback={<FCPLoader />}>{createElement(component, {})}</Suspense>
-                    </Layout>
-                  )}
-                />
-              ))}
-            {routes
-              .filter(({ path }) => path.startsWith('/iframe'))
-              .map(({ path, component }) => (
-                <Route
-                  key={path}
-                  path={path}
-                  component={() => (
-                    <IframeLayout>
-                      <Suspense fallback={<FCPLoader />}>{createElement(component, {})}</Suspense>
-                    </IframeLayout>
-                  )}
-                />
-              ))}
-            <Redirect path="/docs" to="/docs/Overview" />
-            <Redirect path="/components" to="/components/Button" />
+            <Route exact path={['/'].concat(routes.filter(({ path }) => !path.startsWith('/iframe')).map(({ path }) => path))}>
+              <Layout>
+                <Switch>
+                  <Route exact path="/" component={HomeRoute} />
+                  {routes
+                    .filter(({ path }) => !path.startsWith('/iframe'))
+                    .map(({ path, component }) => (
+                      <Route
+                        key={path}
+                        exact
+                        path={path}
+                        component={() => <Suspense fallback={<FCPLoader />}>{createElement(component, {})}</Suspense>}
+                      />
+                    ))}
+                </Switch>
+              </Layout>
+            </Route>
+            <Route exact path={routes.filter(({ path }) => path.startsWith('/iframe')).map(({ path }) => path)}>
+              <IframeLayout>
+                <Switch>
+                  {routes
+                    .filter(({ path }) => path.startsWith('/iframe'))
+                    .map(({ path, component }) => (
+                      <Route
+                        key={path}
+                        exact
+                        path={path}
+                        component={() => <Suspense fallback={<FCPLoader />}>{createElement(component, {})}</Suspense>}
+                      />
+                    ))}
+                </Switch>
+              </IframeLayout>
+            </Route>
+            <Redirect exact path="/docs" to="/docs/Overview" />
+            <Redirect exact path="/components" to="/components/Button" />
             <Redirect path="*" to="/" />
           </Switch>
         </Root>
