@@ -37,7 +37,7 @@ Import on demand:
 Here's a simple online codesandbox demo of the Inula UI component:
 
 <iframe
-  src="https://codesandbox.io/embed/getting-started-3vkd3t?fontsize=14&hidenavigation=1&theme=dark"
+  src="https://codesandbox.io/embed/getting-started-22yzz3?fontsize=14&hidenavigation=1&theme=dark"
   style="width: 100%; height: 500px; overflow: hidden; border: 0; border-radius: 4px"
   title="getting-started"
   allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
