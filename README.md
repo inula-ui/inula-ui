@@ -59,7 +59,9 @@ export default function App() {
 
 ## Links
 
-- [openInula](//openinula.net)
+- [Home page](https://inula-ui.github.io)
+- [CodeSandbox Template](https://codesandbox.io/s/getting-started-22yzz3)
+- [openInula](https://openinula.net)
 
 ## Contributing
 
