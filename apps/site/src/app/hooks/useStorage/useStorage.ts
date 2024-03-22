@@ -59,3 +59,8 @@ export function useStorage<V>(
 }
 
 useStorage.PARSER = STRING_PARSER as AbstractParserOptions<any>;
+useStorage.clear = () => {
+  localStorage.clear();
+  const store = StorageStore();
+  store.clear();
+};
