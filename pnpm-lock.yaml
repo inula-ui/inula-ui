@@ -168,10 +168,10 @@ devDependencies:
     version: 10.0.2
   inula-intl:
     specifier: ^0.0.5
-    version: 0.0.5(openinula@0.1.2-SNAPSHOT)
+    version: 0.0.5(openinula@0.1.3)
   inula-router:
     specifier: ^0.0.4
-    version: 0.0.4(openinula@0.1.2-SNAPSHOT)
+    version: 0.0.4(openinula@0.1.3)
   jsdom:
     specifier: ~22.1.0
     version: 22.1.0
@@ -197,8 +197,8 @@ devDependencies:
     specifier: 17.0.2
     version: 17.0.2(@swc-node/register@1.6.8)(@swc/core@1.3.95)
   openinula:
-    specifier: 0.1.2-SNAPSHOT
-    version: 0.1.2-SNAPSHOT
+    specifier: 0.1.3
+    version: 0.1.3
   postcss-html:
     specifier: ^1.5.0
     version: 1.5.0
@@ -9408,21 +9408,21 @@ packages:
       side-channel: 1.0.4
     dev: true
 
-  /inula-intl@0.0.5(openinula@0.1.2-SNAPSHOT):
+  /inula-intl@0.0.5(openinula@0.1.3):
     resolution: {integrity: sha512-xniiVKnKX8aa+YnaLF7k7Oj/IvkuuiYsks+6FwTNcbwCczJLub3wcpfcYYsip1cFu9t+K83K8lbdF+/BZRAtpA==}
     peerDependencies:
       openinula: '>=0.1.1'
     dependencies:
-      openinula: 0.1.2-SNAPSHOT
+      openinula: 0.1.3
     dev: true
 
-  /inula-router@0.0.4(openinula@0.1.2-SNAPSHOT):
+  /inula-router@0.0.4(openinula@0.1.3):
     resolution: {integrity: sha512-09OphDC98/4hCp19GKowD5Oi2qYY0Ck04Z9YvQb08DSH2aesBnbMh1fvGJ0a2GTAeuNU7gRq/fzvPy2QkCEwYg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       openinula: '>=0.1.1'
     dependencies:
-      openinula: 0.1.2-SNAPSHOT
+      openinula: 0.1.3
     dev: true
 
   /ip-regex@2.1.0:
@@ -12365,8 +12365,8 @@ packages:
     hasBin: true
     dev: true
 
-  /openinula@0.1.2-SNAPSHOT:
-    resolution: {integrity: sha512-dAw3TIvyPgAgYgYevKeYHo3EvONvSyhLY3xt5YUTUFIQ60aR4Sjgc0/pbIPn1k+4M3E9iQl+x2Fx1fAjUvh7Ug==}
+  /openinula@0.1.3:
+    resolution: {integrity: sha512-4jvbnbsLkXQtfGXEHSqMAdqYRyKKLtnn7ch2o9BvN2bL1RGCYXQWKkINHMf5LnoMjlz1NnBbhngj6/CmyvDCqg==}
     engines: {node: '>=0.10.0'}
     dev: true
 

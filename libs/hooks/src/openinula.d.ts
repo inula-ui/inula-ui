@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/consistent-type-imports */
 declare module 'openinula' {
-  import _ from 'openinula/@types/index.d';
+  import _ from 'openinula/build/@types/index.d';
   import React from 'react';
   import ReactDOM from 'react-dom';
 
