@@ -10,6 +10,7 @@
     "prepare": "husky install && ts-node -P ./tools/tsconfig.tools.json ./tools/scripts/husky.ts",
     "prepublishOnly": "nx run-many -t build -p components hooks utils themes",
     "test:affected": "nx affected -t test",
+    "util:prettier": "prettier . --write",
     "util:sort-package-json": "sort-package-json 'package.json' 'libs/*/package.json'",
     "version": "prettier lerna.json --write"
   },
