@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="//inula-ui.github.io/" rel="noopener" target="_blank"><img width="150" src="apps/site/public/logo.png" alt="logo"></a>
+  <a href="//inula-ui.github.io/" rel="noopener" target="_blank"><img width="150" src="https://raw.githubusercontent.com/inula-ui/inula-ui/main/apps/site/public/logo.png" alt="logo"></a>
 </p>
 
 <h1 align="center">Inula UI</h1>
